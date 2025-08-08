@@ -12,6 +12,8 @@ function Book(bookName, authorName, releaseYear, isRead) {
 }
 
 function submitBook() {
+    myLib = JSON.parse(localStorage.getItem("lib"));
+
     const bookName = document.getElementById("bookName").value;
     const authorName = document.getElementById("authorName").value;
     const releaseYear = document.getElementById("releaseYear").value;
@@ -62,5 +64,16 @@ function showRows() {
 }
 
 function removeRow(button){
-    button.parentElement.parentElement.remove();
+    myLib = JSON.parse(localStorage.getItem("lib"));
+
+    const row = button.parentElement.parentElement;
+    const bookName = row.cells[0].textContent;
+    const releaseYear = row.cells[2].textContent;
+    myLib = myLib.filter(book => {
+        return !(book.bookName === bookName && book.releaseYear === releaseYear);
+    });
+
+    localStorage.setItem("lib", JSON.stringify(myLib));
+
+    row.remove();
 }
