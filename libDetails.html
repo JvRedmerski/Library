@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Books</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-slate-900 text-white flex justify-center" onload="showRows()">
+    <table class="mx-auto border-collapse w-auto">
+        <thead>
+            <tr>
+                <th class="border-b border-gray-400 px-4 py-2">Book</th>
+                <th class="border-b border-gray-400 px-4 py-2">Author</th>
+                <th class="border-b border-gray-400 px-4 py-2">Release Year</th>
+                <th class="border-b border-gray-400 px-4 py-2">Watched?</th>
+                <th class="border-b border-gray-400 px-4 py-2">-</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border-t border-b border-gray-400 px-4 py-2">João</td>
+                <td class="border-t border-b border-gray-400 px-4 py-2">João</td>
+                <td class="border-t border-b border-gray-400 px-4 py-2">2005</td>
+                <td class="border-t border-b border-gray-400 px-4 py-2">True</td>
+                <td class="border-t border-b border-gray-400 px-4 py-2">
+                    <input type="button" value="Remove" class="bg-rose-600 py-1 px-2 rounded-xl hover:scale-110 duration-300">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
