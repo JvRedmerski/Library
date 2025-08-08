@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 flex flex-col justify-center gap-10">
+
+    <h1 class="text-white font-bold text-2xl p-5 self-center">Library management system</h1>
+
+    <form class="min-w-[75%] w-[75%] flex flex-col mx-auto gap-10">
+
+        <div class="flex flex-col self-center min-w-[75%]">
+            <label for="bookName" class="text-white">Book Name:</label>
+            <input type="text" placeholder="Insert the name of the book" id="bookName" class="bg-white rounded-xl p-2">
+        </div>
+
+        <div class="flex flex-col self-center min-w-[75%]">
+            <label for="authorName" class="text-white">Author Name:</label>
+            <input type="text" name="authorName" id="authorName" placeholder="Insert author name" class="bg-white rounded-xl p-2">
+        </div>
+
+        <div class="flex flex-col self-center min-w-[75%]">
+            <label for="releaseYear" class="text-white">Release Year:</label>
+            <input type="number" name="releaseYear" id="releaseYear" placeholder="Release Year" class="bg-white rounded-xl p-2">
+        </div>
+
+        <div class="flex gap-2 min-w-[75%] self-center">
+            <div class="flex gap-2 min-w-[75%] self-center">
+                <input type="checkbox" name="isRead" id="isRead" class="scale-200">
+                <label for="isRead" class="text-white text-md">Read?</label>
+            </div>
+            <div class="flex gap-10 text-white font-bold">
+                <input type="button" value="Submit" class="bg-tranparent border-4 border-green-400 hover:bg-green-400 hover:scale-105 duration-300 p-3 rounded-xl">
+                <input type="button" value="Clear" class="bg-tranparent border-4 border-rose-600 hover:bg-rose-600 hover:scale-105 duration-300 p-3 rounded-xl">
+            </div>
+        </div>
+    </form>
+
+    <input type="button" value="Books List" class="font-semibold bg-yellow-300 hover:scale-110 duration-300 w-1/8 p-2 rounded-xl self-center">
+
+</body>
+</html>
