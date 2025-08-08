@@ -46,6 +46,14 @@ function showRows() {
             }
             row.appendChild(cell);
         });
+        var buttonCell = document.createElement('td');
+        buttonCell.classList.add('border-t', 'border-b', 'border-gray-400', 'px-4', 'py-2');
+        var button = document.createElement('input');
+        button.value = "Remove";
+        button.type = "button";
+        button.classList.add('bg-rose-600', 'py-1', 'px-2', 'rounded-xl', 'hover:scale-110', 'duration-300');
+        buttonCell.appendChild(button);
+        row.appendChild(buttonCell);
         document.getElementById("table-body").appendChild(row);
     });
 }
