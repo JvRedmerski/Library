@@ -36,12 +36,13 @@ Delete a Book: Click the "Delete" button next to the book entry you want to remo
 Data Persistence: Book records are automatically saved to Local Storage and persist across browser sessions.
 
 # 📂 Project Structure
-library-management-system/
+```library-management-system/
 ├── index.html      # Main HTML file
 ├── libDetails.html # See all records
 ├── js/
 │   └── script.js   # JavaScript for functionality and Local Storage
 └── README.md       # Project documentation
+```
 
 # 🤝 Contributing
 Contributions are welcome! 🙌 Follow these steps:
@@ -57,5 +58,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 # 📬 Contact
 Have questions or suggestions? Open an issue on GitHub.
 Happy reading! 📖
+
 
 
