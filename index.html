@@ -10,7 +10,7 @@
 
     <h1 class="text-white font-bold text-2xl p-5 self-center">Library management system</h1>
 
-    <form class="min-w-[75%] w-[75%] flex flex-col mx-auto gap-10">
+    <form id="mainForm" class="min-w-[75%] w-[75%] flex flex-col mx-auto gap-10">
 
         <div class="flex flex-col self-center min-w-[75%]">
             <label for="bookName" class="text-white">Book Name:</label>
@@ -33,13 +33,14 @@
                 <label for="isRead" class="text-white text-md">Read?</label>
             </div>
             <div class="flex gap-10 text-white font-bold">
-                <input type="button" value="Submit" class="bg-tranparent border-4 border-green-400 hover:bg-green-400 hover:scale-105 duration-300 p-3 rounded-xl">
-                <input type="button" value="Clear" class="bg-tranparent border-4 border-rose-600 hover:bg-rose-600 hover:scale-105 duration-300 p-3 rounded-xl">
+                <input type="button" onclick="submitBook()" value="Submit" class="bg-tranparent border-4 border-green-400 hover:bg-green-400 hover:scale-105 duration-300 p-3 rounded-xl">
+                <input type="button" onclick="resetForm()" value="Clear" class="bg-tranparent border-4 border-rose-600 hover:bg-rose-600 hover:scale-105 duration-300 p-3 rounded-xl">
             </div>
         </div>
     </form>
 
     <input type="button" value="Books List" class="font-semibold bg-yellow-300 hover:scale-110 duration-300 w-1/8 p-2 rounded-xl self-center">
 
+    <script src="js/script.js"></script>
 </body>
 </html>
