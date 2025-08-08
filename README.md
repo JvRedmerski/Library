@@ -1,20 +1,20 @@
-#📚 Library Management System
+# 📚 Library Management System
 A simple front-end application for managing a library's book records, built with HTML, CSS, and JavaScript. Users can create and delete book entries, with data persisted in the browser's Local Storage. 🚀
 
-#✨ Features
+# ✨ Features
 
 ➕ Add Books: Create new book records with details like title, author, and ISBN.
 🗑️ Delete Books: Remove book entries from the library.
 💾 Local Storage: Persist book data in the browser for seamless access across sessions.
 📱 Responsive Design: Works smoothly on both desktop and mobile devices.
 ---
-#🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 HTML5: Structure of the application.
 CSS3: Styling and responsive layout.
 JavaScript: Core functionality and Local Storage integration.
 
-#🚀 Getting Started
+# 🚀 Getting Started
 Prerequisites
 
 A modern web browser (Chrome, Firefox, Edge, etc.).
@@ -35,7 +35,7 @@ Add a Book: Fill in the form with book details (title, author, release date) and
 Delete a Book: Click the "Delete" button next to the book entry you want to remove.
 Data Persistence: Book records are automatically saved to Local Storage and persist across browser sessions.
 
-#📂 Project Structure
+# 📂 Project Structure
 library-management-system/
 ├── index.html      # Main HTML file
 ├── libDetails.html # See all records
@@ -43,7 +43,7 @@ library-management-system/
 │   └── script.js   # JavaScript for functionality and Local Storage
 └── README.md       # Project documentation
 
-#🤝 Contributing
+# 🤝 Contributing
 Contributions are welcome! 🙌 Follow these steps:
 
 Fork the repository.
@@ -52,9 +52,10 @@ Commit your changes (git commit -m 'Add your feature').
 Push to the branch (git push origin feature/your-feature).
 Open a Pull Request.
 
-#📜 License
+# 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-#📬 Contact
+# 📬 Contact
 Have questions or suggestions? Open an issue on GitHub.
 Happy reading! 📖
+
 
