@@ -51,9 +51,16 @@ function showRows() {
         var button = document.createElement('input');
         button.value = "Remove";
         button.type = "button";
+        button.onclick = function () {
+            removeRow(button)
+        };
         button.classList.add('bg-rose-600', 'py-1', 'px-2', 'rounded-xl', 'hover:scale-110', 'duration-300');
         buttonCell.appendChild(button);
         row.appendChild(buttonCell);
         document.getElementById("table-body").appendChild(row);
     });
+}
+
+function removeRow(button){
+    button.parentElement.parentElement.remove();
 }
